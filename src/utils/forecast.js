@@ -8,7 +8,7 @@ const forecast = (latitude,longitude,callback) =>{
         } else if(response.body.error){
             callback('Can not connect to the address!')
         } else{
-            callback(undefined, 'The temperatue out there is ' + response.body.current.temperature + ' Fahrenheit and the chance of precipitation is '+ response.body.current.precip)
+            callback(undefined, 'The temperatue out there is ' + response.body.current.temperature + ' Fahrenheit and the chance of precipitation is '+ response.body.current.precip + "%")
         }
     })
 }
